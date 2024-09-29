@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>결제창</h1>
+    <p id="adultData"> </p>
+    <p> 신용카드 번호를 입력하고 결제 버튼을 눌러 주세요</p>
+    <input id="cardNumber" type="text">
+    <br>
+    <button onclick="pay2()">결제</button>
+
+
+    <script>
+        let adultData=document.querySelector('#adultData')
+        let cardNumber=document.querySelector('#cardNumber')
+        let totalPriceValue=0
+        function GototalPrice(price){
+            totalPriceValue=price
+            adultData.innerHTML = `${price}을 결제하겠습니다`
+        }
+
+function pay2(){
+    if (cardNumber.value.length === 0) {
+        alert('카드번호를 입력해주세요')
+    } else {
+        console.log(cardNumber.value)
+        alert(`${cardNumber.value}로 ${totalPriceValue}원이 결제되었습니다`)
+        window.close()
+    }
+}
+        
+    </script>
+</body>
+</html>

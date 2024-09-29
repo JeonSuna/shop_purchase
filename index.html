@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*unset*/
+        li,
+        ul {
+            list-style-type: none;
+            margin: unset;
+            padding: unset;
+        }
+
+        .contain {
+            width: fit-content;
+            overflow-y: scroll;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>참치회 특가 판매</h1>
+    <div class="contain">
+        <ul class="content">
+            <li><label><input class='product' id="product" type="checkbox" value="대뱃살-3000"> 대뱃살 - 3000</label></li>
+            <li><label><input class='product' id="product" type="checkbox" value="목살-5000"> 목살 - 5000</label></li>
+            <li><label><input class='product' id="product" type="checkbox" value="뱃꼽살-4000"> 뱃꼽살 - 4000</label></li>
+            <li><label><input class='product' id="product" type="checkbox" value="중뱃살-1000"> 중뱃살 - 1000</label></li>
+        </ul>
+    </div>
+
+    <h2>선택한 상품</h2>
+    <ul id="selectedResult"> </ul>
+
+
+    <h2 id="price"></h2>
+    <button onclick="pay()">결제하기</button>
+
+
+
+
+    <script src="main.js">
+
+    </script>
+</body>
+
+</html>
