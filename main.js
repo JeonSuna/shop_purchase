@@ -12,6 +12,7 @@ let products = [
     new Product('배꼽살', 4000),
     new Product('중뱃살', 1000)
 ];
+console.log(products)
 
 const checkboxItem = document.querySelectorAll('.product')
 const selectedResult = document.getElementById('selectedResult')
